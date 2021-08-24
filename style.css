@@ -187,3 +187,48 @@ a, .button {
 .blue, .primary {
     background-color: rgba(0,63,199,.8588235294117647)!important;
 }
+@media screen and (max-width: 768px){
+    #header{
+        background-size: 1px 80px;
+    }
+    #header, img.ui.image.logo, #header .right.menu{
+        height: 80px;
+    }
+    #header .right.menu .beforeIcon, #header .right.menu .afterIcon {
+        background-size: 14px 80px;
+        background-position: 0 1px;
+    }
+    #header .ui.secondary.menu .item {
+        padding: 4px;
+    }
+}
+@media screen and (max-width: 540px){
+    #header{
+        background-size: 1px 50px;
+    }
+    #header, img.ui.image.logo, #header .right.menu{
+        height: 50px;
+    }
+    #header .right.menu .beforeIcon, #header .right.menu .afterIcon {
+        width: 8px;
+        background-size: 8px 50px;
+    }
+    .afterIcon {
+        background-position: 0px 1px !important;
+    }
+    #header .ui.secondary.menu .item {
+        padding: 2px;
+    }
+    #header .right.menu {
+        margin-right: 20px !important;
+    }
+}
+@media screen and (max-width: 400px){
+    #header .right.menu {
+        margin-left: auto !important;
+        margin-right: 10px !important;
+    }
+    #header .ui.secondary.menu .item {
+        padding: 0px;
+    }
+}
